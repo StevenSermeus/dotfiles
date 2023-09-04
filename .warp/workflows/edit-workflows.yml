@@ -1,0 +1,16 @@
+---
+name: Edit workflows with vscode
+command: "{{editor}} -n {{path}}"
+arguments:
+  - name: path
+    description: Path to file
+    default_value: ~/.warp/workflows
+  - name: editor
+    description: Editor to use
+    default_value: code
+tags:
+  - workflows
+description: "Edit workflows"
+author: Steven Sermeus
+author_url: "https:/stevensermeus.be"
+shells: []

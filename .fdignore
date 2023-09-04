@@ -1,0 +1,15 @@
+Library/*
+Music/*
+node_modules/*
+.vscode
+.idea
+Applications/*
+DataGripProjects/*
+Desktop
+Movies/*
+.cache/*
+.next/*
+.putty/$
+.ssh/*
+.zsh_sessions/*
+.npm/*

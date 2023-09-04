@@ -1,0 +1,20 @@
+---
+name: ntfy delayed
+command: "curl  -H 'In: {{delay}}' -d '{{message}}' https://ntfy.stevensermeus.be/{{topic}}"
+tags:
+  - ntfy
+description: "Send a notification to your phone"
+arguments:
+  - name: message
+    description: Message to send
+    default_value: Hello world
+  - name: delay
+    description: "Delay in seconds example: 1h, 30min, 1s"
+    default_value: 0min
+  - name: topic
+    description: Topic to send to
+    default_value: notif-push
+# source_url: "https://github.com/christianlempa/dotfiles"
+author: Steven Sermeus
+author_url: "https:/stevensermeus.be"
+shells: []

@@ -1,0 +1,11 @@
+---
+name: Get local IP
+command: "ifconfig {{interface}} | grep inet | awk '{print $2}'"
+arguments:
+  - name: interface
+    description: Interface to use
+    default_value: en0
+description: "Edit workflows"
+author: Steven Sermeus
+author_url: "https:/stevensermeus.be"
+shells: []
