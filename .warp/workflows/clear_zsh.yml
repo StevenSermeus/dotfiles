@@ -1,0 +1,9 @@
+---
+name: Clear zsh history
+command: "rm ~/.zsh_history && source ~/.zshrc"
+tags:
+  - zsh
+description: "Clear zsh history and reload zshrc"
+author: Steven Sermeus
+author_url: "https:/stevensermeus.be"
+shells: ["zsh"]

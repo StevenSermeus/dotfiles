@@ -1,2 +1,52 @@
+alias cls="clear"
 alias k="kubectl"
-alias ls="exa"
+alias ls="exa --icons --group-directories-first"
+alias codef='selected_file=$(fzf); if [ -n "$selected_file" ]; then code "$selected_file"; fi'
+alias codefold='selected_directory=$(fd -t d | fzf); if [ -n "$selected_directory" ]; then code "$selected_directory"; fi'
+alias codefd='selected_directory=$(fd -t d | fzf); if [ -n "$selected_directory" ]; then code "$selected_directory"; fi'
+alias codefi='selected_file=$(fzf); if [ -n "$selected_file" ]; then code "$selected_file"; fi'
+alias nanof='selected_file=$(fzf); if [ -n "$selected_file" ]; then nano "$selected_file"; fi'
+alias k="kubectl"
+alias kga="kubectl get all"
+alias kgn="kubectl get nodes"
+alias kgs="kubectl get svc"
+alias kgd="kubectl get deploy"
+alias kgp="kubectl get pods"
+alias kgj="kubectl get jobs"
+alias kgr="kubectl get rs"
+alias kgi="kubectl get ing"
+alias mv='mv -i'
+alias cp='cp -i'
+alias ln='ln -i'
+alias rm='rm -i'
+alias upgrade="brew update && brew upgrade"
+alias c="clear"
+alias h="history"
+alias cat="bat"
+alias lg="lazygit"
+alias g="git"
+alias gs="git status"
+alias ga="git add"
+alias gc="git commit"
+alias gca="git commit -a"
+alias gcm="git commit -m"
+alias gco="git checkout"
+alias gcb="git checkout -b"
+alias speedtest="speedtest-cli"
+alias py="python"
+alias gitb="git log --graph --pretty=oneline --abbrev-commit"
+alias d="docker"
+alias dc="docker-compose"
+alias dcontainer="docker container"
+alias dimage="docker image"
+alias dnetwork="docker network"
+alias dvolume="docker volume"
+alias dexec="docker exec -it"
+alias dstop="docker stop"
+alias dstart="docker start"
+alias dlogs="docker logs"
+alias dnetwork="docker network"
+alias dclogs="docker-compose logs"
+alias dcrun="docker-compose run"
+alias dcbuild="docker-compose build"
+alias neoflex="neofetch --ascii_distro arch"
