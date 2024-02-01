@@ -1,0 +1,10 @@
+---
+name: Code fzf
+command: "code $(fzf)"
+tags:
+  - fuzy
+  - code
+description: "Search file and open in VSCode"
+author: Steven Sermeus
+author_url: "https:/stevensermeus.be"
+shells: []

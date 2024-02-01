@@ -1,0 +1,9 @@
+---
+name: Ansible ping
+command: "ansible all -m ping"
+tags:
+  - ansible
+description: "Ansible ping all vm's"
+author: Steven Sermeus
+author_url: "https:/stevensermeus.be"
+shells: ["zsh"]

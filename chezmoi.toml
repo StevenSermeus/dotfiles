@@ -1,0 +1,5 @@
+scriptTempDir = "~/tmp"
+
+[diff]
+    exclude = ["scripts"]
+

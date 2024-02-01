@@ -1,0 +1,22 @@
+---
+name: Ansible playbooks
+command: "ansible-playbook -i {{inventory}} {{playbook}} {{playbook_args}}"
+arguments:
+  - name: inventory
+    type: string
+    description: "Inventory file"
+    default_value: "inventory.cfg"
+  - name: playbook
+    type: string
+    description: "Playbook file"
+    default_value: "playbook.yml"
+  - name: playbook_args
+    type: string
+    description: "Playbook arguments"
+    default_value: "--ask-become-pass"
+tags:
+  - ansible
+description: "Ansible ping all vm's"
+author: Steven Sermeus
+author_url: "https:/stevensermeus.be"
+shells: ["zsh"]
