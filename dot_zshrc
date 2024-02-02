@@ -2,6 +2,8 @@ HISTFILE="$HOME/.zsh_history"
 HISTSIZE=5000
 SAVEHIST=5000
 
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$PATH
+
 source ~/.zsh/alias.zsh
 source ~/.zsh/.fzf.zsh
 
