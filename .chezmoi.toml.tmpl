@@ -1,0 +1,9 @@
+{{- $email := promptString "email" -}}
+
+scriptTempDir = "~/tmp"
+
+[data]
+    email = "{{ $email }}"
+
+[diff]
+    exclude = ["scripts"]

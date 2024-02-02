@@ -15,6 +15,10 @@
     url = "https://github.com/romkatv/powerlevel10k/archive/v1.20.0.tar.gz"
     exact = true
     stripComponents = 1
-
+[".nano"]
+    type = "archive"
+    url = "https://github.com/scopatz/nanorc/releases/download/2020.10.10/nanorc-2020.10.10.tar.gz"
+    exact = true
+    stripComponents = 1
 
 
