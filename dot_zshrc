@@ -1,6 +1,10 @@
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=5000
 SAVEHIST=5000
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$PATH
 
