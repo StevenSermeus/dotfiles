@@ -1,9 +1,12 @@
 {{- $email := promptString "email" -}}
+{{- $firstname := promptString "firstname" -}}
+{{- $lastname := promptString "lastname" -}}
 
 scriptTempDir = "~/tmp"
 
 [data]
     email = "{{ $email }}"
-
+    name = "{{ $lastname }} {{ $firstname }}"
+    
 [diff]
     exclude = ["scripts"]
