@@ -6,6 +6,8 @@ Pictures/*
 .idea
 Applications/*
 DataGripProjects/*
+PyCharmProjects/*
+PhpStormProjects/*
 Desktop
 Movies/*
 .cache/*
@@ -27,3 +29,16 @@ node_modules
 .venv
 .rustup
 .cargo
+SynologyDrive/*
+AnalyseDrive/*
+GNS3/*
+go/*
+Zotero/*
+*/.idea
+*/.vscode
+*/.git
+*/.venv
+*/.bun
+*/.pnpm
+node_modules*/
+Documents/League of Legends/*
