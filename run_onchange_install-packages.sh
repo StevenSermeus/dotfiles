@@ -5,3 +5,23 @@
 brew bundle install
 
 rm Brewfile.lock.json
+
+
+if [ "$(uname)" == "Darwin" ]; then
+    echo "Configuring for MacOS"
+
+    echo "Set auto-hide true"
+    defaults write com.apple.dock autohide -bool true
+
+    echo "Set autohide-time"
+    defaults write com.apple.dock autohide-time-modifier -float 0.5
+
+    echo "Set key repeat"
+    defaults write -g InitialKeyRepeat -int 15
+    defaults write -g KeyRepeat -int 2
+
+    echo "Finder customisation"
+    defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+    defaults write com.apple.finder ShowPathbar -bool true
+
+fi
