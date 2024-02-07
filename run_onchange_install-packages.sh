@@ -6,6 +6,9 @@ brew bundle install
 
 rm Brewfile.lock.json
 
+echo "Common configuration"
+
+
 
 if [ "$(uname)" == "Darwin" ]; then
     echo "Configuring for MacOS"
@@ -25,3 +28,9 @@ if [ "$(uname)" == "Darwin" ]; then
     defaults write com.apple.finder ShowPathbar -bool true
 
 fi
+
+if [ "$(uname)" != "Darwin" ]; then
+    echo "Removing .warp"
+    rm -rf ~/.warp
+fi
+
