@@ -1,5 +1,7 @@
 alias exa="exa --icons --group-directories-first"
 alias cls="clear"
+alias ipw="ipconfig getifaddr en0"
+alias ipc="ipconfig getifaddr en1"
 alias codef='selected_file=$(fzf); if [ -n "$selected_file" ]; then code "$selected_file"; fi'
 alias codefold='selected_directory=$(fd -t d | fzf); if [ -n "$selected_directory" ]; then code "$selected_directory"; fi'
 alias codefd='selected_directory=$(fd -t d | fzf); if [ -n "$selected_directory" ]; then code "$selected_directory"; fi'
@@ -58,7 +60,8 @@ alias ssh-windows="ssh kirby@192.168.0.31"
 alias ssh-debian="ssh kirby@192.168.0.33"
 alias ssh-fedora="ssh kirby@192.168.0.32"
 alias ssh-arch="ssh kirby@192.168.0.34"
-alias neoflex="neofetch --ascii_distro arch"
+alias neofetch="macchina"
+alias neoflex="macchina"
 alias convert='docker run --rm --volume "$(pwd)":/data --platform linux/amd64 mfreeze/pandoc-iesn:mermaid-latest-ubuntu -p xelatex -m -l -M -e -N pdf'
 alias cleangit="git clean -f -x -d"
 alias code-insider="code"

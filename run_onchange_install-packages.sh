@@ -27,6 +27,8 @@ if [ "$(uname)" == "Darwin" ]; then
     defaults write NSGlobalDomain AppleShowAllExtensions -bool true
     defaults write com.apple.finder ShowPathbar -bool true
 
+    echo "Yabai and skhd services"
+
 fi
 
 if [ "$(uname)" != "Darwin" ]; then
