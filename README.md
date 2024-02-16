@@ -13,5 +13,5 @@ sh -c "$(curl -fsLS get.chezmoi.io)" 
 1. Setup dotfiles:
 
 ```sh
-chezmoi init --apply https://github.com/StevenSermeus/dotfiles.git
+chezmoi init --apply git@github.com:StevenSermeus/dotfiles.git
 ```
