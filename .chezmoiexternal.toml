@@ -1,24 +1,11 @@
-[".oh-my-zsh"]
-    type = "archive"
-    url = "https://github.com/ohmyzsh/ohmyzsh/archive/master.tar.gz"
-    exact = true
-    stripComponents = 1
-    refreshPeriod = "168h"
-[".oh-my-zsh/custom/plugins/zsh-syntax-highlighting"]
-    type = "archive"
-    url = "https://github.com/zsh-users/zsh-syntax-highlighting/archive/master.tar.gz"
-    exact = true
-    stripComponents = 1
-    refreshPeriod = "168h"
-[".oh-my-zsh/custom/themes/powerlevel10k"]
-    type = "archive"
-    url = "https://github.com/romkatv/powerlevel10k/archive/v1.20.0.tar.gz"
-    exact = true
-    stripComponents = 1
 [".nano"]
     type = "archive"
     url = "https://github.com/scopatz/nanorc/releases/download/2020.10.10/nanorc-2020.10.10.tar.gz"
     exact = true
     stripComponents = 1
-
+[".password-store"]
+    type = "git-repo"
+    url = "https://github.com/StevenSermeus/password-store"
+    branch = "master"
+    refreshPeriod = "168h"
 
