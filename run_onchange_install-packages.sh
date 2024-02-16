@@ -8,8 +8,6 @@ rm Brewfile.lock.json
 
 echo "Common configuration"
 
-
-
 if [ "$(uname)" == "Darwin" ]; then
     echo "Configuring for MacOS"
 
@@ -36,3 +34,18 @@ if [ "$(uname)" != "Darwin" ]; then
     rm -rf ~/.warp
 fi
 
+if [ ! -f ~/.ssh/github ]; then
+    echo "Generating github key"
+    ssh-keygen -t rsa -b 4096 -C "github" -f ~/.ssh/github
+    eval "$(ssh-agent -s)"
+    ssh-add ~/.ssh/github
+fi
+
+if [ ! -f ~/.ssh/gitlab ]; then
+    echo "Generating gitlab key"
+    ssh-keygen -t rsa -b 4096 -C "gitlab" -f ~/.ssh/gitlab
+    eval "$(ssh-agent -s)"
+    ssh-add ~/.ssh/gitlab
+fi
+
+echo "Common configuration done"
