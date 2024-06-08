@@ -1,2 +1,5 @@
 [user]
     email = "stevensermeus@gmail.com"
+    signingKey = D53CCDB936980926
+[commit]
+	gpgSign = true

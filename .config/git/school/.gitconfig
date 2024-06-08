@@ -1,2 +1,6 @@
 [user]
     email = "etu44050@henallux.be"
+    signingKey = D53CCDB936980926
+    
+[commit]
+	gpgSign = true
