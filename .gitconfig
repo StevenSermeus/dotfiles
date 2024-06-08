@@ -3,6 +3,7 @@
 
 [alias]
     bb = "!~/.config/git/better-branch.sh"
+    co = checkout
 
 [user]
     name = "Steven Sermeus"
