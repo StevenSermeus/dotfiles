@@ -5,7 +5,7 @@
     bb = "!~/.config/git/better-branch.sh"
 
 [user]
-    name = "Sermeus Steven"
+    name = "Steven Sermeus"
     email = "stevensermeus@gmail.com"
 
 [includeIf "gitdir:~/git/school/"]
