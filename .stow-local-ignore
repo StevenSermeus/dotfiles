@@ -26,3 +26,5 @@ _darcs
 
 ^/Brewfile
 ^/Brewfile-terminal
+
+.DS_Store

@@ -1,0 +1,15 @@
+[color]
+	ui = auto
+
+[alias]
+    bb = "!~/.config/git/better-branch.sh"
+
+[user]
+    name = "Sermeus Steven"
+    email = "stevensermeus@gmail.com"
+
+[includeIf "gitdir:~/git/school/"]
+    path = ~/.config/git/school/.gitconfig
+
+[includeIf "gitdir:~/git/personal/"]
+    path = ~/.config/git/personal/.gitconfig
