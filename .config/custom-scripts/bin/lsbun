@@ -1,0 +1,8 @@
+#! /opt/homebrew/bin/bun run
+
+import { $ } from "bun";
+
+const ls = await $`ls`;
+
+console.log(ls.stdout);
+ 

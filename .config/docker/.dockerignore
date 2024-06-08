@@ -1,0 +1,5 @@
+# Ignore DS_STORE files, node_modules, and build files
+
+.DS_Store
+node_modules
+build
