@@ -7,6 +7,9 @@ if [ ! -d "$ZINIT_HOME" ]; then
    git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 fi
 
+# Enable brew completion
+FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
 # Source/Load zinit
 source "${ZINIT_HOME}/zinit.zsh"
 
