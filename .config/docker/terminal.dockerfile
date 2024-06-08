@@ -12,6 +12,9 @@ RUN apt-get update && apt-get install -y \
     wget \
     unzip 
 
+# Set root password to be able to use it to install package at runtime
+RUN echo 'root:root' | chpasswd
+
 # Eza install
 RUN mkdir -p /etc/apt/keyrings
 RUN wget -qO- https://raw.githubusercontent.com/eza-community/eza/main/deb.asc | gpg --dearmor -o /etc/apt/keyrings/gierens.gpg
