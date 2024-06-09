@@ -24,7 +24,7 @@ zinit snippet OMZP::ansible
 zinit snippet OMZP::yarn
 zinit snippet OMZP::nvm
 zinit snippet OMZP::npm
-zinit snippet OMZP::node   
+zinit snippet OMZP::node
 
 autoload -Uz compinit && compinit
 

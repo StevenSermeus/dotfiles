@@ -18,3 +18,7 @@ fi
 if [ -f ~/.config/zsh/zinit.zsh ]; then
   source ~/.config/zsh/zinit.zsh
 fi
+
+if [ -f ~/.config/zsh/orbstack.zsh ]; then
+  source ~/.config/zsh/orbstack.zsh
+fi

@@ -13,3 +13,8 @@ alias run-ansible="docker run -it --platform=linux/amd64 $volumes --volume $(pwd
 if [ -z "$DOCKERIZED" ] || [ "$DOCKERIZED" = "false" ]; then
     alias ansible='run-ansible'
 fi
+
+# Pandoc aliases
+
+alias pandoc-base='docker run --rm --volume "$(pwd)":/data --platform linux/amd64 mfreezepandoc-iesn:mermaid-latest-ubuntu -p xelatex -m -l -M -e -N -I -T pdf *.md'
+alias pandoc-iesn='docker run --rm --volume "$(pwd)":/data --platform linux/amd64 mfreezepandoc-iesn:mermaid-latest-ubuntu -p xelatex -m -l -M -N -I -T pdf *.md'

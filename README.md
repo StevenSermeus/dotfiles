@@ -7,3 +7,14 @@ cd .dotfiles
 stow .
 brew bundle install
 ```
+
+## Mac specific command
+
+Command that are specific to the mac and that can't be set in dotfiles.
+
+Disabling keychain for gpg.
+
+```bash
+defaults write org.gpgtools.common UseKeychain NO
+defaults write org.gpgtools.common DisableKeychain -bool yes
+```
