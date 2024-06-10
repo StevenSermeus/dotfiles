@@ -18,3 +18,10 @@ Disabling keychain for gpg.
 defaults write org.gpgtools.common UseKeychain NO
 defaults write org.gpgtools.common DisableKeychain -bool yes
 ```
+
+## Configure GPG
+
+```bash
+max-cache-ttl 300
+default-cache-ttl 300
+```

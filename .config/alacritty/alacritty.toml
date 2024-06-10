@@ -1,4 +1,5 @@
 #config file for alacritty from https://github.com/dreamsofautonomy/dotfiles
+
 live_config_reload = true
 
 [bell]
