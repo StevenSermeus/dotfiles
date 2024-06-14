@@ -1,0 +1,39 @@
+layout {
+    
+    default_tab_template {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        children
+        pane size=2 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+    }
+    
+    pane_template name="terminal-docker" {
+        command "docker"
+        args "run" "-it" "--platform=linux/amd64" "--volume" "/Users/mew/.ssh:/home/mew-docker/.ssh" "--volume" "/Users/mew/.cache/zellij-docker:/home/mew-docker/.cache" "--volume" "/Users/mew/git/school/archi-os/:/home/mew-docker/workdir" "--rm" "--name" "ansible" "ansible"
+    }
+
+    pane_template name="ssh" {
+        command "ssh"
+    }
+
+    tab split_direction="vertical" name="ssh"{
+        pane split_direction="horizontal" {
+            ssh {
+                args "debian-ansible"
+            }
+            ssh {
+                args "fedora-ansible"
+            }
+        }
+        ssh {
+            args "arch-ansible"
+        }
+    }
+    tab split_direction="vertical" name="ansible-cli"{ // the default_tab_template with three vertical panes between the plugins
+        terminal-docker
+    }
+
+}

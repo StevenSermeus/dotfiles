@@ -28,3 +28,4 @@ _darcs
 ^/Brewfile-terminal
 
 .DS_Store
+.CFUserTextEncoding 

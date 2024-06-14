@@ -13,9 +13,12 @@ if [ -z "$DOCKERIZED" ] || [ "$DOCKERIZED" = "false" ]; then
     alias build-terminal='docker build -t terminal -f ~/.config/docker/terminal.dockerfile ~'
     alias run-terminal="docker run -it --platform=linux/amd64 $volumes --rm --name terminal terminal"
     alias build-ansible='build-terminal && docker build -t ansible -f ~/.config/docker/ansible.dockerfile ~'
-    alias run-ansible="docker run -it --platform=linux/amd64 $volumes --volume '$(pwd)':/home/mew-docker/workdir --rm --name ansible ansible"
-    
+    alias run-ansible="docker run -it --platform=linux/amd64 $volumes --volume $(pwd):/home/mew-docker/workdir --rm --name ansible ansible"
+    alias build-psql='docker build -t psql -f ~/.config/docker/psql.dockerfile ~' 
+    alias run-psql="docker run -it --platform=linux/amd64 $volumes --rm --name psql psql"
+    alias psql='run-psql '
     # Pandoc aliases
     alias pandoc-base='docker run --rm --volume "$(pwd)":/data --platform linux/amd64 mfreeze/pandoc-iesn:mermaid-latest-ubuntu -p xelatex -m -l -M -e -N -I -T pdf'
     alias pandoc-iesn='docker run --rm --volume "$(pwd)":/data --platform linux/amd64 mfreeze/pandoc-iesn:mermaid-latest-ubuntu -p xelatex -m -l -M -N -I -T pdf'
+    alias zarchi="zellij --layout ~/.dotfiles/.config/zellij/archi-os.kdl"
 fi

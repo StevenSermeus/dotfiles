@@ -6,3 +6,5 @@ RUN apt install -y \
     ansible
 
 USER mew-docker
+
+WORKDIR /home/mew-docker/workdir

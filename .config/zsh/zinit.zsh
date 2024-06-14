@@ -28,6 +28,7 @@ zinit snippet OMZP::nvm
 zinit snippet OMZP::npm
 zinit snippet OMZP::node
 
+
 autoload -Uz compinit && compinit
 
 zinit cdreplay -q

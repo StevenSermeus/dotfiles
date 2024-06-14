@@ -7,3 +7,18 @@ Host gitlab.com
     HostName gitlab.com
     User git
     IdentityFile ~/.ssh/gitlab
+
+Host debian-ansible
+    HostName 192.168.0.31
+    User steven
+    IdentityFile ~/.ssh/ansible-steven
+
+Host fedora-ansible
+    HostName 192.168.0.32
+    User steven
+    IdentityFile ~/.ssh/ansible-steven
+
+Host arch-ansible
+    HostName 192.168.0.33
+    User steven
+    IdentityFile ~/.ssh/ansible-steven
