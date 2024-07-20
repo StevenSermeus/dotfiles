@@ -96,7 +96,7 @@ program = "/bin/zsh"
 decorations = "buttonless"
 dynamic_title = true
 startup_mode = "Maximized"
-opacity = 0.75
+opacity = 0.40
 blur = true
 
 [window.dimensions]
