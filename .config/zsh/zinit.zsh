@@ -44,16 +44,9 @@ if [ ! -d "$ZSH_PLUGINS_DIR" ]; then
    mkdir -p "$(dirname $ZSH_PLUGINS_DIR)"
 fi
 
-# # Install All plugins 
-# if [ ! -f "$ZSH_PLUGINS_DIR/plugins/you-should-use/you-should-use.plugin.zsh" ]; then
-#     git clone https://github.com/MichaelAquilina/zsh-you-should-use.git $ZSH_PLUGINS_DIR/plugins/you-should-use
-# fi
+# Install All plugins 
+if [ ! -f "$ZSH_PLUGINS_DIR/plugins/you-should-use/you-should-use.plugin.zsh" ]; then
+    git clone https://github.com/MichaelAquilina/zsh-you-should-use.git $ZSH_PLUGINS_DIR/plugins/you-should-use
+fi
 
-# source $ZSH_PLUGINS_DIR/plugins/you-should-use/you-should-use.plugin.zsh
-
-# if [ ! -f "$ZSH_PLUGINS_DIR/autocomplete/git-flow-completion/git-flow-completion.zsh" ]; then
-#     git clone https://github.com/bobthecow/git-flow-completion.git $ZSH_PLUGINS_DIR/autocomplete/git-flow-completion
-# fi
-
-# source $ZSH_PLUGINS_DIR/autocomplete/git-flow-completion/git-flow-completion.zsh
-
+source $ZSH_PLUGINS_DIR/plugins/you-should-use/you-should-use.plugin.zsh

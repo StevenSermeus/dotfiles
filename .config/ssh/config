@@ -22,3 +22,18 @@ Host arch-steven
     HostName 192.168.0.33
     User steven
     IdentityFile ~/.ssh/ansible-steven
+
+Host arch-ansible
+    HostName 192.168.0.33
+    User ansible
+    IdentityFile ~/.ssh/ansible
+
+Host fedora-ansible
+    HostName 192.168.0.32
+    User ansible
+    IdentityFile ~/.ssh/ansible
+
+Host debian-ansible
+    HostName 192.168.0.31
+    User ansible
+    IdentityFile ~/.ssh/ansible
