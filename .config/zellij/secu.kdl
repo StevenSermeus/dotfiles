@@ -1,0 +1,32 @@
+layout {
+        default_tab_template {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        children
+        pane size=2 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+    }
+    pane_template name="ssh" {
+        command "ssh"
+    }
+tab split_direction="vertical" name="ssh"{
+        pane split_direction="horizontal" {
+            ssh {
+                args "tatius"
+            }
+            ssh {
+                args "janus"
+            }
+        }
+        pane split_direction="horizontal" {
+            ssh {
+                args "tarpeia"
+            }
+            ssh {
+                args "vesta"
+            }
+        }
+    }
+}

@@ -11,7 +11,10 @@
 [user]
     name = "Steven Sermeus"
     email = "stevensermeus@gmail.com"
-
+    signingKey = E3A9F34AE4073EB36367295D39DBB83F93F72084
+    
+[commit]
+	gpgSign = true
 
 [includeIf "gitdir:~/git/school/"]
     path = ~/.config/git/school/.gitconfig
