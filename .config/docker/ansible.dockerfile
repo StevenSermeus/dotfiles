@@ -9,4 +9,6 @@ USER mew-docker
 
 RUN ansible-galaxy collection install community.docker --upgrade
 
+RUN ansible-galaxy collection install community.general 
+
 WORKDIR /home/mew-docker/workdir

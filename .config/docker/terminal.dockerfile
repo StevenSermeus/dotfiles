@@ -39,6 +39,8 @@ RUN tar -xvf zellij-${ARCH}-unknown-linux-musl.tar.gz
 RUN mv zellij /usr/local/bin
 RUN rm zellij-${ARCH}-unknown-linux-musl.tar.gz
 
+RUN echo "Europe/Brussels" > /etc/timezone
+
 # Create user
 RUN useradd -m mew-docker
 USER mew-docker
@@ -59,6 +61,8 @@ ENV DOCKERIZED=true
 ENV TERM=xterm-256color
 RUN zsh -c "echo 'source ~/.zshrc' > /tmp/source-zshrc.sh && chmod +x /tmp/source-zshrc.sh"
 RUN zsh /tmp/source-zshrc.sh || cat /home/mew-docker/.zshrc
+
+
 
 CMD ["/bin/zsh"]
 

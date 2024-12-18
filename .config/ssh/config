@@ -8,32 +8,27 @@ Host gitlab.com
     User git
     IdentityFile ~/.ssh/gitlab
 
-Host debian-steven
-    HostName 192.168.0.31
-    User steven
-    IdentityFile ~/.ssh/ansible-steven
+Host digital1
+    HostName 138.197.179.205
+    User root
+    IdentityFile ~/.ssh/digital
 
-Host fedora-steven
-    HostName 192.168.0.32
-    User steven
-    IdentityFile ~/.ssh/ansible-steven
+Host digital2
+    HostName 165.232.78.60
+    User root
+    IdentityFile ~/.ssh/digital
 
-Host arch-steven
-    HostName 192.168.0.33
-    User steven
-    IdentityFile ~/.ssh/ansible-steven
+Host kubernetes-1
+    HostName 192.168.0.40
+    User mew
+    IdentityFile ~/.ssh/kubernetes
 
-Host arch-ansible
-    HostName 192.168.0.33
-    User ansible
-    IdentityFile ~/.ssh/ansible
+Host kubernetes-2
+    HostName 192.168.0.41
+    User mew
+    IdentityFile ~/.ssh/kubernetes
 
-Host fedora-ansible
-    HostName 192.168.0.32
-    User ansible
-    IdentityFile ~/.ssh/ansible
-
-Host debian-ansible
-    HostName 192.168.0.31
-    User ansible
-    IdentityFile ~/.ssh/ansible
+Host kubernetes-3
+    HostName 192.168.0.42
+    User mew
+    IdentityFile ~/.ssh/kubernetes

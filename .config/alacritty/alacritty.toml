@@ -1,6 +1,3 @@
-#config file for alacritty from https://github.com/dreamsofautonomy/dotfiles
-
-live_config_reload = true
 
 [bell]
 animation = "EaseOutExpo"
@@ -89,7 +86,7 @@ mouse = "Middle"
 [selection]
 semantic_escape_chars = ",│`|:\"' ()[]{}<>"
 
-[shell]
+[terminal.shell]
 program = "/bin/zsh"
 
 [window]
@@ -106,3 +103,10 @@ lines = 80
 [window.padding]
 x = 4
 y = 4
+
+[general]
+#config file for alacritty from https://github.com/dreamsofautonomy/dotfiles
+
+live_config_reload = true
+
+[terminal]

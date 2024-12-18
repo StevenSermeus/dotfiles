@@ -1,3 +1,6 @@
+[core]
+  editor = nvim
+
 [color]
 	ui = auto
 
@@ -19,6 +22,14 @@
 [includeIf "gitdir:~/.dotfiles/"]
     path = ~/.config/git/personal/.gitconfig
 
+[rerere]
+    enabled = true
 
 [pgp]
     program = /opt/homebrew/bin/gpg
+
+[url "git@github.com:"]
+	insteadOf = "https://github.com/"
+
+[url "git@gitlab.com:"]
+  insteadOf = "https://gitlab.com/"
